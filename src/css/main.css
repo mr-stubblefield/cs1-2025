@@ -2,3 +2,16 @@ body {
     background: #323232;
     color: #dedede;
 }
+
+h1 {
+    color: darkgreen;
+}
+
+.title {
+    background-color: saddlebrown;
+}
+
+#title {
+    background: linear-gradient(to right, #323232, #dedede);
+    color: darksalmon;
+}
