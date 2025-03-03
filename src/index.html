@@ -11,12 +11,17 @@
     <h1 class="title">This is another H1</h1>
     <h1>Third line</h1>
     <p>This is just some text</p>
-    <input type="text" placeholder="Enter your name"></input><br>
-    <textarea placeholder="Enter your message"></textarea><br>
+    <input type="text" name="name" placeholder="Enter your name"></input><br>
+    <textarea placeholder="Enter your message" name="message"></textarea><br>
     <button type="submit" onclick="submit()">Send</button>
     <script>
         function submit() {
             console.log("Hello World");
+            var name = document.getElementsByName("name").item(0).value;
+            var message = document.getElementsByName("message").item(0).value;
+            console.log(name);
+            console.log(message);
+            alert("Hello " + name + "! Your message is: " + message);
         }
     </script>
 </body>
