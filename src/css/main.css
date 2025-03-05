@@ -15,3 +15,13 @@ h1 {
     background: linear-gradient(to right, #323232, #dedede);
     color: darksalmon;
 }
+
+a, a:visited, a:active {
+    padding: 0px 3px;
+    color: darksalmon;
+}
+
+a:hover {
+    background: darksalmon;
+    color: #323232;
+}
