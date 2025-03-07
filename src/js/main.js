@@ -18,3 +18,13 @@ function createNav() {
 document.addEventListener("DOMContentLoaded", () => {
     createNav();
 });
+
+class anchor {
+    constructor(name, url) {
+        this.name = name;
+        this.url = url;
+    }
+    toHTML() {
+        return '<a href="' + this.url + '">' + this.name + '</a>';
+    }
+}
